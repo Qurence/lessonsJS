@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 4</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #2b2b2b;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        color: #ffffff;
+      }
+      input{
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 200px;
+      }
+      label {
+        color: #ffffff;
+        margin-right: 10px;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap: 10px;
+      }
+      .add {
+        padding: 10px 15px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .delete {
+        padding: 10px 15px;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <label for="number">Number:</label>
+    <input type="number" name="number" id="number" placeholder="Enter a number" />
+    <label for="step">Step:</label>
+    <input type="number" class="step" placeholder="Enter step" value="1"/>
+    <button id="checkButton" class="add">Go!</button>
+    <button id="button-delete" class="delete">Delete</button>
+  </div>
+    <script src="./js/script.js" ></script>
+</body>
+</html>

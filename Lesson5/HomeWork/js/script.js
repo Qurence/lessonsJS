@@ -66,7 +66,7 @@ cssButton.addEventListener('click', () => {
 
 function shop(productName, pricePerKg, quantity) {
     const totalPrice = pricePerKg * quantity;
-    return `Product: ${productName}, Total Price: ${totalPrice} UAH`;
+    return `Product: ${productName}<br>Total Price: ${totalPrice} UAH`;
 }
 
 const banana = {
@@ -94,13 +94,13 @@ const output2 = document.getElementById('output2');
 
 btn_banana.addEventListener('click', () => {
     const result = shop(banana.productName, banana.pricePerKg, banana.quantity);
-    output2.textContent = result;
+    output2.innerHTML = result;
 });
 btn_cherry.addEventListener('click', () => {
     const result = shop(cherry.productName, cherry.pricePerKg, cherry.quantity);
-    output2.textContent = result;
+    output2.innerHTML = result;
 });
 btn_orange.addEventListener('click', () => {
     const result = shop(orange.productName, orange.pricePerKg, orange.quantity);
-    output2.textContent = result;
+    output2.innerHTML = result;
 });

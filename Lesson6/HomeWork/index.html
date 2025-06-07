@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWork6</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>HomeWork6</h1>
+    <div class="container_task">
+      <!-- <p class="task">
+        Створити телефонну книгу <br />
+        створити початковий клас Abonent, де зберігатимуться ім*я і номер<br />
+        створити set який прийматиме телефон і номер<br />
+        створити get який виводитиме данні про абонента створити три різних
+        юзери вивести данні
+      </p> -->
+      <p>Створити телефонну книгу</p>
+      <ul class="task-list">
+        <li class="task-item" >створити початковий клас Abonent, де зберігатимуться ім*я і номер ✅</li>
+        <li class="task-item" >створити set який прийматиме телефон і номер ✅</li>
+        <li class="task-item" >створити get який виводитиме данні про абонента ✅</li>
+        <li class="task-item" >створити три різних юзери ✅</li>
+        <li class="task-item" >вивести данні ✅</li>
+        <li class="task-item" ><span>Додатково - </span> додав можливість редагувати абонентів ✅</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="container-abonents">
+        <div data-user-id="1" class="abonent">
+          <h2>Abonent 1</h2>
+          <p class="abonent_name_1"></p>
+          <p class="abonent_phone_1"></p>
+        </div>
+        <div data-user-id="2" class="abonent">
+          <h2>Abonent 2</h2>
+          <p class="abonent_name_2"></p>
+          <p class="abonent_phone_2"></p>
+        </div>
+        <div data-user-id="3" class="abonent">
+          <h2>Abonent 3</h2>
+          <p class="abonent_name_3"></p>
+          <p class="abonent_phone_3"></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal is_hidden">
+      <div class="modal-content">
+        <button class="close_modal">&times;</button>
+        <h2>Abonent Editor</h2>
+        <div class="container-inputs">
+          <input type="text" class="abonent_name" placeholder="New Name" />
+          <input type="text" class="abonent_phone" placeholder="New Phone" />
+        </div>
+        <button class="save_button">Save</button>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

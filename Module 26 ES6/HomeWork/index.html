@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomeWork Module 26</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>HomeWork Module 26</h1>
+    <div class="container_task">
+      <p>
+        Створіть функцію-конструктор Calculator, який створює об’єкти з трьома
+        методами:
+      </p>
+      <ul class="task-list">
+        <li class="task-item">
+          read() запитує два значення за допомогою prompt і запам’ятовує їх у
+          властивостях об’єкта. ✅
+        </li>
+        <li class="task-item">sum() повертає суму цих властивостей. ✅</li>
+        <li class="task-item">
+          mul() повертає результат множення даних властивостей. ✅
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="container-nputs">
+        <input type="number" id="a" placeholder="Enter first number" />
+        <input type="number" id="b" placeholder="Enter second number" />
+      </div>
+      <div class="container-buttons">
+        <!-- <button id="read">Read</button> -->
+        <button id="sum">Sum</button>
+        <button id="mul">Mul</button>
+      </div>
+      <p class="result"></p>
+    </div>
+    <div class="container">
+      <div class="code">
+        <pre>
+            <code class="language-js">
+                <p>Через prompt:</p>
+            class Calculator {
+                constructor() {
+                    this.a = 0;
+                    this.b = 0;
+                }
+                read() {
+                    this.a = +prompt("Enter first number", 0);
+                    this.b = +prompt("Enter second number", 0);
+                }
+                sum() {
+                    return this.a + this.b;
+                }
+                mul() {
+                    return this.a * this.b;
+                }
+                }
+
+                const calculator = new Calculator();
+                calculator.read();
+                alert("Sum: " + calculator.sum());
+                alert("Mul: " + calculator.mul());
+                <p>Через input:</p>
+                const a = document.querySelector("#a");
+                const b = document.querySelector("#b");
+
+                const button_sum = document.querySelector("#sum");
+                const button_mul = document.querySelector("#mul");
+
+                class Calculator {
+                constructor() {
+                    this.a = 0;
+                    this.b = 0;
+                }
+                
+                read() {
+                    this.a = +a.value;
+                    this.b = +b.value;
+                }
+                
+                sum() {
+                    return this.a + this.b;
+                }
+                
+                mul() {
+                    return this.a * this.b;
+                }
+                }
+
+                const calculator = new Calculator();
+
+                button_sum.addEventListener("click", () => {
+                calculator.read();
+                document.querySelector(".result").textContent = "Sum: " + calculator.sum();
+                });
+
+                button_mul.addEventListener("click", () => {
+                calculator.read();
+                document.querySelector(".result").textContent = "Mul: " + calculator.mul();
+                });
+
+            </code>
+        </pre>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+button {
+    cursor: pointer;
+    background: #6db85a;
+    border-radius: 18px;
+    color: white;
+}
+
+input{
+    border-radius: 18px;
+    padding: 10px;
+    background-color: #979797;
+    color: white;
+}
+
+input::placeholder{
+    color: rgb(207, 207, 207);
+}   
+
+.buttonBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonItem {
+    margin: 30px;
+    width: 80px;
+    height: 80px;
+}
+
+.form {
+    margin: 0 auto;
+    text-align: center;
+    padding: 32px;
+}
+
+.input {
+    margin: 10px;
+}
+
+.parent,
+.child,
+.item {
+    margin: 30px;
+    padding: 10px;
+    outline: 1px solid #FFC107;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.liItem {
+    margin: 20px;
+    padding: 20px;
+    border: 3px solid red;
+}
+
+.liItem.active {
+    background-color: red;
+
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    z-index: 20;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.parent:hover {
+    background-color: #FFCDD2;
+}
+
+.child:hover {
+    background-color: #C8E6C9;
+}
+
+.item:hover {
+    background-color: #BBDEFB;
+}
+
+li:hover {
+    background-color: #FFC107;
+}
